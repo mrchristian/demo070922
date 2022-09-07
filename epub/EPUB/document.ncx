@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ncx xmlns:ncx="http://www.daisy.org/z3986/2005/ncx/" xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="en">
+  <head>
+    <meta name="dtb:fidus" content="109" />
+  </head>
+  <docTitle>
+    <text>Demo 070922</text>
+  </docTitle>
+  <navMap>
+
+    <!-- 2.01 NCX: playOrder is optional -->
+    <navPoint id="t1">
+      <navLabel><text>Title page</text></navLabel>
+      <content src="titlepage.xhtml#title" />
+    </navPoint>
+    <navPoint id="t_1_0-1">
+      <navLabel><text>Publication landing pages</text></navLabel>
+      <content src="document-1.xhtml#_1_0" />
+      <navPoint id="tH5756141-1">
+        <navLabel><text>Auto-generated landing pages</text></navLabel>
+        <content src="document-1.xhtml#H5756141" />
+      </navPoint>
+      <navPoint id="tH6474399-1">
+        <navLabel><text>About: The NFDI4Culture working group “enhanced publications” (TA4)</text></navLabel>
+        <content src="document-1.xhtml#H6474399" />
+      </navPoint>
+      <navPoint id="tH1966406-1">
+        <navLabel><text>Question about publication landing pages</text></navLabel>
+        <content src="document-1.xhtml#H1966406" />
+        <navPoint id="tH3516035-1">
+          <navLabel><text>Description of the question</text></navLabel>
+          <content src="document-1.xhtml#H3516035" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="tH4241469-1">
+        <navLabel><text>Example</text></navLabel>
+        <content src="document-1.xhtml#H4241469" />
+      </navPoint>
+      <navPoint id="tH8497618-1">
+        <navLabel><text>Details: Auto-generated landing pages</text></navLabel>
+        <content src="document-1.xhtml#H8497618" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="t_2_0-2">
+      <navLabel><text>Demo C</text></navLabel>
+      <content src="document-2.xhtml#_2_0" />
+    </navPoint>
+    <navPoint id="t_3_0-3">
+      <navLabel><text>Demo B</text></navLabel>
+      <content src="document-3.xhtml#_3_0" />
+    </navPoint>
+    <navPoint id="t2">
+      <navLabel><text>Copyright</text></navLabel>
+      <content src="copyright.xhtml#copyright" />
+    </navPoint>
+  </navMap>
+</ncx>

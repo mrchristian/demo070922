@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:epub="http://www.idpf.org/2007/ops">
+  <head>
+    <title>Publication landing pages</title>
+    <link rel="stylesheet" type="text/css" href="css/document.css" />
+    <link rel="stylesheet" type="text/css" href="css/ada002.css" />
+  </head>
+  <body class="epub content" data-title="Publication landing pages">
+    <div class="article-part article-title" id="_1_0">Publication landing pages</div>
+    <div class="article-part article-richtext article-body">
+      <p>From: Simon Worthington, Open Science Lab, TIB. NFDI4Culture. 23 June 2022. <a href="mailto:simon.worthington@tib.eu">simon.worthington@tib.eu</a></p>
+      <h2 id="H5756141"><strong>Auto-generated landing pages</strong></h2>
+      <p>The issue we are trying address solve is giving visibilty to other versions of a publication: formats, editions etc. Our observation is that publications quite often don't make avaiable information about other versions.</p>
+      <p>Feedback requested:</p>
+      <p>We are looking for feedback on whether a version of Linked Open Data (LOD) metadata for a publication could be automatically used for rendering human and machine readable outputs. The idea is to have a small app that could gather metadata sources, cache (Kafka like) a limited LOD data-set, then output in different format based on a model of Content Addressable URL-Caching to create the required humand machine readable data needed. Publication display platforms could then use this data as best suits them - simply as a URL for an HTML landing page to show details of all other versions, or to create Web Element info boxes, publication navigation menus, etc. The simplest presentation data would be a menu link-list of other publication versions - short title, or format, or translation, plus a metadata version?</p>
+      <p>Does this already exist? Is their a working model or standard for doing this?</p>
+      <p>Should we model the LOD idea with a Wikidata example using the Wikimedia book model?</p>
+      <p>More details below in <em>Details: Auto-generated landing pages</em></p>
+      <h2 id="H6474399"><strong>About: The NFDI4Culture working group “enhanced publications” (TA4)</strong></h2>
+      <p>URL: <a href="https://nfdi4culture.de/what-we-do/task-areas/task-area-4.html">https://nfdi4culture.de/what-we-do/task-areas/task-area-4.html</a></p>
+      <p>The working group looking to establish criteria for enhancing a publication. Our aim is to make a definition and recommendations within a culture context of how to make a publication open, and what additional functionality and enrichment can be added. What types of requirements are made of scholarly publishing to be fully open, and how these are implemented in systems or infrastructure.</p>
+      <p>For this purpose we are comparing and looking at a very wide spectrum of publications ranging from conventional academic papers and monographs, to multi-modal project outcomes, or enriched historical databases.</p>
+      <h2 id="H1966406"><strong>Question about publication landing pages</strong></h2>
+      <p>The working group is collating publication features that it sees as important to make a publication to be enhanced for open.</p>
+      <p>A key feature identified is 'Landing pages - to create visibility of all publication formats, editions, versions, or tranlations'.</p>
+      <h3 id="H3516035"><strong>Description of the question</strong></h3>
+      <p>If a publication has multiple formats, output locations, editions, versions, or tranlation then a method is needed to make these visible on each instance. This information needs to be machine readable and human readable. The use of a landing page and access URL is one way to provide information about all outputs. If an access URL or the landing page is visible on each output then a manifest, or inventory (list) of publications can be made available.</p>
+      <p>Our brief research has found that this is not done in most cases.</p>
+      <h2 id="H4241469"><strong>Example</strong></h2>
+      <p>Open Book Publishers (OBP) do good job on human readable, but not sure about machine readable version - <a href="https://www.openbookpublishers.com/product/1535">https://www.openbookpublishers.com/product/1535</a></p>
+      <p>The following paper points to the need for 'landing pages' and the use of an 'access URL' for a publication - see the following table - <a href="https://journals.plos.org/plosbiology/article/figure?id=10.1371/journal.pbio.2001414.t001">https://journals.plos.org/plosbiology/article/figure?id=10.1371/journal.pbio.2001414.t001</a> - Paper: 'Identifiers for the 21st century: How to design, provision, and reuse persistent identifiers to maximize utility and impact of life science data' <a href="https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.2001414">https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.2001414</a></p>
+      <h2 id="H8497618"><strong>Details: Auto-generated landing pages</strong></h2>
+      <p>The concept is to:</p>
+      <p>a. To get as close to using primary source metadata as possible to ensure sustainability, and avoid duplication, extra work, or avoid the creation of errors.</p>
+      <p>b. Avoid being platform dependent as publications appear on all types of platforms. This is for metadata sources and publication display platforms.</p>
+      <p>c. Have as low technical bar for entry.</p>
+      <p><em>Could the answer be about creating a simple LOD model for publication availabily, with these features?</em></p>
+      <ul id="L5080391">
+        <li>
+          <p>The ability to load metadata sources, like: DOIs, ISBN or ISSN records, Wikidata records.</p>
+        </li>
+        <li>
+          <p>With a LOD validator.</p>
+        </li>
+        <li>
+          <p>With a disambiguator.</p>
+        </li>
+        <li>
+          <p>And an human and machine rending output based on Content Addressable URL-caching models.</p>
+        </li>
+        <li>
+          <p>The result could be that the admin can select human and machine readable that they want from a form and it then generates them a landing access page URL or which users could attached a DOI, other PID, or crypto ID.</p>
+        </li>
+        <li>
+          <p>The service can be something self hosted, institutional hosted, or as a community service like Zenodo.</p>
+        </li>
+        <li>
+          <p>The output could be a static output, or it could be a live data output that updates when changes are made, self validates with CI, or at regular intervals.</p>
+        </li>
+      </ul>
+      <p><em>How would it work</em></p>
+      <ol id="L69048931">
+        <li>
+          <p>User inputs links to source metadata for publication.</p>
+        </li>
+        <li>
+          <p>Data is retreived, validated and created a LOD output.</p>
+        </li>
+        <li>
+          <p>User selects human and machine readable outputs needed, e.g., human = json feed for webpage - machine = Dublin Core XML URL.</p>
+        </li>
+        <li>
+          <p>User reviews outputs and goes back to metadata sources and makes inputs if needed.</p>
+        </li>
+        <li>
+          <p>User embeds output data URLs into their publication - the outputs can then be treated as preferred by publication platform - simple links to landing page, or as Wikpedia like infoboxes.</p>
+        </li>
+      </ol>
+      <p>LOD fields to include:</p>
+      <ul id="L17089981">
+        <li>
+          <p>?</p>
+        </li>
+        <li>
+          <p>Model in Wikidata following Wikimedia book model?</p>
+        </li>
+      </ul>
+    </div>
+    <section class="fnlist" role="doc-endnotes" />
+  </body>
+</html>

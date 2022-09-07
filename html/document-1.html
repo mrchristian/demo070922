@@ -2,159 +2,11 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Demo 070922</title>
+    <title>Publication landing pages</title>
     <link type="text/css" rel="stylesheet" href="css/book.css" />
-    <style>
-      a.fn {
-        -adapt-template: url(data:application/xml,%3Chtml%20xmlns=%22http://www.w3.org/1999/xhtml%22%20xmlns:s=%22http://www.pyroxy.com/ns/shadow%22%3E%3Chead%3E%3Cstyle%3E.footnote-content%7Bfloat:footnote%7D%3C/style%3E%3C/head%3E%3Cbody%3E%3Cs:template%20id=%22footnote%22%3E%3Cs:content/%3E%3Cs:include%20class=%22footnote-content%22/%3E%3C/s:template%3E%3C/body%3E%3C/html%3E#footnote);
-        text-decoration: none;
-        color: inherit;
-        vertical-align: baseline;
-        font-size: 70%;
-        position: relative;
-        top: -0.3em;
-      }
-      body {
-        background-color: white;
-      }
-      section[role=doc-footnote] .footnote-counter:after {
-        content: ". ";
-      }
-      section.fnlist {
-        display: none;
-      }
-      section:footnote-content {
-        display: block;
-        font-style: normal;
-        font-weight: normal;
-        text-decoration: none;
-      }
-      .table-of-contents a {
-        display: inline-flex;
-        width: 100%;
-        text-decoration: none;
-        color: currentColor;
-        break-inside: avoid;
-        align-items: baseline;
-      }
-      .table-of-contents a::before {
-        margin-left: 1px;
-        margin-right: 1px;
-        border-bottom: solid 1px lightgray;
-        content: "";
-        order: 1;
-        flex: auto;
-      }
-      .table-of-contents a::after {
-        text-align: right;
-        content: target-counter(attr(href, url), page);
-        align-self: flex-end;
-        flex: none;
-        order: 2;
-      }
-      @page {
-        size: A4;
-        @top-center {
-          content: env(doc-title);
-        }
-        @bottom-center {
-          content: counter(page);
-        }
-      }
-      @page :first {
-        @bottom-center {
-          content: normal;
-        }
-        @top-center {
-          content: normal;
-        }
-      }
-      figure img {
-        max-width: 100%;
-      }
-      .article-title {
-        page-break-before: right;
-      }
-      h1.part {
-        page-break-before: right;
-      }
-      .copyrightpage {
-        page-break-before: left;
-      }
-      .tocpage {
-        page-break-before: right;
-      }
-      .booktitle {
-        text-align: center;
-      }
-    </style>
     <link type="text/css" rel="stylesheet" href="css/ada002.css" />
   </head>
-  <body class="user-contents">
-    <div class="titlepage frontmatter">
-      <h1 class="booktitle">Demo 070922</h1>
-    </div>
-    <div class="copyrightpage frontmatter">
-      <p>Last Updated: 2022-09-07</p>
-      <p>Created: 2022-09-07</p>
-      <p>Language: English</p>
-      <p>Created by: Simon Worthington</p>
-    </div>
-    <div class="tocpage frontmatter">
-      <nav role="doc-toc">
-        <ol>
-          <li>
-            <a href="#_1_0">
-              Publication landing pages
-            </a>
-            <ol>
-              <li>
-                <a href="#H5756141">
-                  Auto-generated landing pages
-                </a>
-              </li>
-              <li>
-                <a href="#H6474399">
-                  About: The NFDI4Culture working group “enhanced publications” (TA4)
-                </a>
-              </li>
-              <li>
-                <a href="#H1966406">
-                  Question about publication landing pages
-                </a>
-                <ol>
-                  <li>
-                    <a href="#H3516035">
-                      Description of the question
-                    </a>
-                  </li>
-                </ol>
-              </li>
-              <li>
-                <a href="#H4241469">
-                  Example
-                </a>
-              </li>
-              <li>
-                <a href="#H8497618">
-                  Details: Auto-generated landing pages
-                </a>
-              </li>
-            </ol>
-          </li>
-          <li>
-            <a href="#_2_0">
-              Demo C
-            </a>
-          </li>
-          <li>
-            <a href="#_3_0">
-              Demo B
-            </a>
-          </li>
-        </ol>
-      </nav>
-    </div>
+  <body class="book-chapter">
     <div class="article-part article-title" id="_1_0">Publication landing pages</div>
     <div class="article-part article-richtext article-body">
       <p>From: Simon Worthington, Open Science Lab, TIB. NFDI4Culture. 23 June 2022.&nbsp;<a href="mailto:simon.worthington@tib.eu">simon.worthington@tib.eu</a></p>
@@ -234,16 +86,6 @@
           <p>Model in Wikidata following Wikimedia book model?</p>
         </li>
       </ul>
-    </div>
-    <section class="fnlist" role="doc-footnotes"></section>
-    <div class="article-part article-title" id="_2_0">Demo C</div>
-    <div class="article-part article-richtext article-body">
-      <p></p>
-    </div>
-    <section class="fnlist" role="doc-footnotes"></section>
-    <div class="article-part article-title" id="_3_0">Demo B</div>
-    <div class="article-part article-richtext article-body">
-      <p></p>
     </div>
     <section class="fnlist" role="doc-footnotes"></section>
   </body>
